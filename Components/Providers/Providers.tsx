@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
 
 interface ProvidersProps {
-  Children: ReactNode;
+  children: ReactNode;
 }
 
-export default function Providers({ Children }: ProvidersProps) {
-  return <>{Children}</>;
+export default function Providers({ children }: ProvidersProps) {
+  return <>{children}</>;
 }

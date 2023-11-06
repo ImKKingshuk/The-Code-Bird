@@ -1,10 +1,10 @@
 "use client";
 
-interface TheCodeBirdLogoProps {
+interface CodeBirdLogoProps {
   IconSize: string;
 }
 
-export default function TheCodeBirdLogo({ IconSize }: TheCodeBirdLogoProps) {
+export default function CodeBirdLogo({ IconSize }: CodeBirdLogoProps) {
   const size = `fill-current ${IconSize}`;
 
   return (

@@ -1,13 +1,17 @@
 "use client";
 
-interface TheCodeBirdLogoProps {}
+interface TheCodeBirdLogoProps {
+  IconSize: string;
+}
 
-export default function TheCodeBirdLogo({}: TheCodeBirdLogoProps) {
+export default function TheCodeBirdLogo({ IconSize }: TheCodeBirdLogoProps) {
+  const size = `fill-current ${IconSize}`;
+
   return (
     <div>
       <svg
         version="1.0"
-        className="w-12 h-12"
+        className={size}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 500.000000 500.000000"
         preserveAspectRatio="xMidYMid meet"

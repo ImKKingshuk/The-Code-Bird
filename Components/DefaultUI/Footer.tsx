@@ -12,7 +12,7 @@ function Footer({}: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-3  md:gap-[8rem]">
           <div className="mb-6 md:mb-0">
             <Link href="/">
-              <div className="justify-start flex space-x-2">
+              <div className=" justify-center md:justify-start flex space-x-2">
                 <CodeBirdLogo IconSize="w-12 h-12" />
                 <p className="text-2xl p-1 font-bold">The Code Bird</p>
               </div>

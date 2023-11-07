@@ -4,46 +4,32 @@ import Image from "next/image";
 
 interface FooterProps {}
 
-const links = [
-  { text: "Home", href: "/" },
-  { text: "Blog", href: "/Blog" },
-  { text: "Events", href: "/Events" },
-  { text: "About Us", href: "/About" },
-  { text: "Join Community", href: "/JoinCommunity" },
-];
-
-const moreLinks = [
-  { text: "Advisor", href: "/About/#Advisor" },
-  { text: "Core Team", href: "/About/#CoreTeam" },
-  { text: "FAQ", href: "/About/FAQ" },
-];
-
-const legalLinks = [
-  { text: "Privacy Policy", href: "/More/Privacy" },
-  { text: "Terms & Conditions", href: "/More/TandC" },
-];
-
-function FooterLinks({ title, links }) {
-  return (
-    <div>
-      <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase dark:text-white">
-        {title}
-      </h2>
-      <ul className="text-gray-600 dark:text-gray-400 font-medium space-y-4">
-        {links.map((link, index) => (
-          <li key={index}>
-            <Link href={link.href}>
-              <p className="">{link.text}</p>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
+interface LinkItem {
+  text: string;
+  href: string;
 }
 
 function Footer({}: FooterProps) {
   const currentYear = new Date().getFullYear();
+
+  const links: LinkItem[] = [
+    { text: "Home", href: "/" },
+    { text: "Blog", href: "/Blog" },
+    { text: "Events", href: "/Events" },
+    { text: "About Us", href: "/About" },
+    { text: "Join Community", href: "/JoinCommunity" },
+  ];
+
+  const moreLinks: LinkItem[] = [
+    { text: "Advisor", href: "/About/#Advisor" },
+    { text: "Core Team", href: "/About/#CoreTeam" },
+    { text: "FAQ", href: "/About/FAQ" },
+  ];
+
+  const legalLinks: LinkItem[] = [
+    { text: "Privacy Policy", href: "/More/Privacy" },
+    { text: "Terms & Conditions", href: "/More/TandC" },
+  ];
 
   return (
     <div className="pt-12">
@@ -91,6 +77,30 @@ function Footer({}: FooterProps) {
           </p>
         </div>
       </div>
+    </div>
+  );
+}
+
+interface FooterLinksProps {
+  title: string;
+  links: LinkItem[];
+}
+
+function FooterLinks({ title, links }: FooterLinksProps) {
+  return (
+    <div>
+      <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase dark:text-white">
+        {title}
+      </h2>
+      <ul className="text-gray-600 dark:text-gray-400 font-medium space-y-4">
+        {links.map((link, index) => (
+          <li key={index}>
+            <Link href={link.href}>
+              <p className="">{link.text}</p>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

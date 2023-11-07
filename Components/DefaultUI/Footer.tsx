@@ -8,8 +8,8 @@ function Footer({}: FooterProps) {
 
   return (
     <div className="pt-12">
-      <div className="mx-auto w-full max-w-screen-xl p-4">
-        <div className="md:flex md:justify-between">
+      <div className="mx-auto w-full max-w-screen-xl p-4 grid">
+        <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="mb-6 md:mb-0">
             <Link href="/">
               <div className="justify-start flex space-x-2">
@@ -27,7 +27,7 @@ function Footer({}: FooterProps) {
               soar to new coding heights!
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 md:gap-6 md:grid-cols-3 ">
             <div>
               <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase dark:text-white">
                 Links

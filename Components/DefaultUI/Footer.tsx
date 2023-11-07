@@ -9,7 +9,7 @@ function Footer({}: FooterProps) {
   return (
     <div className="pt-12">
       <div className="mx-auto w-full max-w-screen-xl p-4 grid">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[8rem]">
+        <div className="grid grid-cols-1 md:grid-cols-3  md:gap-[8rem]">
           <div className="mb-6 md:mb-0">
             <Link href="/">
               <div className="justify-start flex space-x-2">

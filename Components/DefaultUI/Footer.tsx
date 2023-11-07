@@ -53,6 +53,7 @@ function Footer({}: FooterProps) {
       </div>
     );
   }
+
   return (
     <div className="pt-12">
       <div className="mx-auto w-full max-w-screen-xl p-4 grid">

@@ -18,7 +18,7 @@ function Footer({}: FooterProps) {
               </div>
             </Link>
 
-            <p className="text-justify">
+            <p className="text-justify pt-4">
               "The Code Bird" is the biggest coding club of UIT, where budding
               tech enthusiasts flock together to spread their wings and explore
               the fascinating world of programming. With engaging workshops,

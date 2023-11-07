@@ -1,7 +1,46 @@
-"use client";
 import CodeBirdLogo from "../CodeBirdLogo";
 import Link from "next/link";
+import Image from "next/image";
+
 interface FooterProps {}
+
+const links = [
+  { text: "Home", href: "/" },
+  { text: "Blog", href: "/Blog" },
+  { text: "Events", href: "/Events" },
+  { text: "About Us", href: "/About" },
+  { text: "Join Community", href: "/JoinCommunity" },
+];
+
+const moreLinks = [
+  { text: "Advisor", href: "/About/#Advisor" },
+  { text: "Core Team", href: "/About/#CoreTeam" },
+  { text: "FAQ", href: "/About/FAQ" },
+];
+
+const legalLinks = [
+  { text: "Privacy Policy", href: "/More/Privacy" },
+  { text: "Terms & Conditions", href: "/More/TandC" },
+];
+
+function FooterLinks({ title, links }) {
+  return (
+    <div>
+      <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase dark:text-white">
+        {title}
+      </h2>
+      <ul className="text-gray-600 dark:text-gray-400 font-medium space-y-4">
+        {links.map((link, index) => (
+          <li key={index}>
+            <Link href={link.href}>
+              <p className="">{link.text}</p>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 function Footer({}: FooterProps) {
   const currentYear = new Date().getFullYear();
@@ -9,10 +48,10 @@ function Footer({}: FooterProps) {
   return (
     <div className="pt-12">
       <div className="mx-auto w-full max-w-screen-xl p-4 grid">
-        <div className="grid grid-cols-1 md:grid-cols-3  md:gap-[8rem]">
+        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-[8rem]">
           <div className="mb-6 md:mb-0">
             <Link href="/">
-              <div className=" justify-center md:justify-start flex space-x-3 ">
+              <div className="justify-center md:justify-start flex space-x-3">
                 <CodeBirdLogo IconSize="w-12 h-12" />
                 <p className="text-2xl p-1 font-bold">The Code Bird</p>
               </div>
@@ -27,81 +66,13 @@ function Footer({}: FooterProps) {
               soar to new coding heights!
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-8 md:gap-6 md:grid-cols-3 col-span-2 ">
-            <div>
-              <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase dark:text-white">
-                Links
-              </h2>
-              <ul className="text-gray-600 dark:text-gray-400 font-medium  space-y-4">
-                <li>
-                  <Link href="/">
-                    <p className=" ">Home</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/Blog">
-                    <p className=" ">Blog</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/Events">
-                    <p className=" ">Events</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/About">
-                    <p className=" ">About Us</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/JoinCommunity">
-                    <p className=" ">Join Community</p>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase dark:text-white">
-                More
-              </h2>
-              <ul className="text-gray-600 dark:text-gray-400 font-medium  space-y-4">
-                <li>
-                  <Link href="/About/#Advisor">
-                    <p className=" ">Advisor</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/About/#CoreTeam">
-                    <p className=" ">Core Team</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/About/FAQ">
-                    <p className=" ">FAQ</p>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase dark:text-white">
-                Legal
-              </h2>
-              <ul className="text-gray-600 dark:text-gray-400 font-medium">
-                <li className="mb-4">
-                  <Link href="/More/Privacy">
-                    <p className=" "> Privacy Policy</p>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/More/TandC">
-                    <p className=" "> Terms &amp; Conditions</p>
-                  </Link>
-                </li>
-              </ul>
-            </div>
+          <div className="grid grid-cols-2 gap-8 md:gap-6 md:grid-cols-3 col-span-2">
+            <FooterLinks title="Links" links={links} />
+            <FooterLinks title="More" links={moreLinks} />
+            <FooterLinks title="Legal" links={legalLinks} />
           </div>
         </div>
-        <hr className="my-4 border-gray-200 sm:mx-auto dark:border-gray-700 " />
+        <hr className="my-4 border-gray-200 sm:mx-auto dark:border-gray-700" />
         <div className="sm:flex sm:items-center sm:justify-between text-center">
           <p className="text-center">
             Designed &#38; Developed with{" "}
@@ -115,7 +86,7 @@ function Footer({}: FooterProps) {
             </a>
           </p>
 
-          <p className=" text-gray-500 dark:text-white">
+          <p className="text-gray-500 dark:text-white">
             &copy; {currentYear}, The Code Bird | All Rights Reserved.
           </p>
         </div>

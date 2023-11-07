@@ -30,7 +30,29 @@ function Footer({}: FooterProps) {
     { text: "Privacy Policy", href: "/More/Privacy" },
     { text: "Terms & Conditions", href: "/More/TandC" },
   ];
+  interface FooterLinksProps {
+    title: string;
+    links: LinkItem[];
+  }
 
+  function FooterLinks({ title, links }: FooterLinksProps) {
+    return (
+      <div>
+        <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase dark:text-white">
+          {title}
+        </h2>
+        <ul className="text-gray-600 dark:text-gray-400 font-medium space-y-4">
+          {links.map((link, index) => (
+            <li key={index}>
+              <Link href={link.href}>
+                <p className="">{link.text}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
   return (
     <div className="pt-12">
       <div className="mx-auto w-full max-w-screen-xl p-4 grid">
@@ -77,30 +99,6 @@ function Footer({}: FooterProps) {
           </p>
         </div>
       </div>
-    </div>
-  );
-}
-
-interface FooterLinksProps {
-  title: string;
-  links: LinkItem[];
-}
-
-function FooterLinks({ title, links }: FooterLinksProps) {
-  return (
-    <div>
-      <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase dark:text-white">
-        {title}
-      </h2>
-      <ul className="text-gray-600 dark:text-gray-400 font-medium space-y-4">
-        {links.map((link, index) => (
-          <li key={index}>
-            <Link href={link.href}>
-              <p className="">{link.text}</p>
-            </Link>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }

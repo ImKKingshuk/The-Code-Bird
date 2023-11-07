@@ -6,12 +6,24 @@
 
 <br><br>
 
-<h3 align="center">Follow these steps to run MediFlow</h3>
+<h3 align="center">Follow these steps to run The Code Bird</h3>
 
 #### Installation
 
 ```bash
 bun install
+
+OR
+
+npm install
+
+OR
+
+yarn install
+
+OR
+
+pnpm install
 ```
 
 ##### Start app:

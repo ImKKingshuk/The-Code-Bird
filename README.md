@@ -48,7 +48,19 @@ git clone https://github.com/ImKKingshuk/The-Code-Bird.git
 3. **Install dependencies:** Install dependencies:
 
 ```bash
+bun install
+
+OR
+
 npm install
+
+OR
+
+yarn install
+
+OR
+
+pnpm install
 ```
 
 ### Making Contributions

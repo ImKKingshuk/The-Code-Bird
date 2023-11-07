@@ -1,3 +1,4 @@
+"use client";
 import CodeBirdLogo from "../CodeBirdLogo";
 import Link from "next/link";
 

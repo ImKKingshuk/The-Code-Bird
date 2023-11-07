@@ -30,6 +30,14 @@ pnpm install
 
 ```bash
 bun dev
+
+OR
+
+npm run dev
+
+OR
+
+yarn dev
 ```
 
 <h1 align="center">Contributing</h1>

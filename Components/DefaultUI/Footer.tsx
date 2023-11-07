@@ -27,7 +27,7 @@ function Footer({}: FooterProps) {
               soar to new coding heights!
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-8 md:gap-6 md:grid-cols-3 ">
+          <div className="grid grid-cols-2 gap-8 md:gap-6 md:grid-cols-3 col-span-2 ">
             <div>
               <h2 className="mb-6 text-md font-semibold text-gray-900 uppercase dark:text-white">
                 Links

@@ -1,6 +1,5 @@
 import CodeBirdLogo from "../CodeBirdLogo";
 import Link from "next/link";
-import Image from "next/image";
 
 interface FooterProps {}
 

@@ -41,7 +41,7 @@ yarn dev
 ```
 
 <h1 align="center">Contributing</h1>
-<p align="center">We welcome contributions from the community to make Feed0 better for everyone. Whether you're a developer, designer, or enthusiast, there are ways you can contribute.</p>
+<p align="center">We welcome contributions from the community to make The Code Bird better for everyone. Whether you're a developer, designer, or enthusiast, there are ways you can contribute.</p>
 
 ### Getting Started
 

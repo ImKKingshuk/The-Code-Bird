@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       bn: "/bn",
     },
   },
-  generator: "@ImKKingshuk",
+
   applicationName: "CodeBird UIT",
   referrer: "origin-when-cross-origin",
   keywords: [

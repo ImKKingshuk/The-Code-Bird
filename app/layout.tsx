@@ -35,9 +35,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "@ImKKingshuk", url: "https://github.com/ImKKingshuk" }],
 
-  creator: "@ImKKingshuk",
-  publisher: "@ImKKingshuk",
-
   openGraph: {
     title: "CodeBird UIT",
     description:

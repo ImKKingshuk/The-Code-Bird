@@ -85,14 +85,7 @@ function Footer({}: FooterProps) {
         <div className="sm:flex sm:items-center sm:justify-between text-center">
           <p className="text-center">
             Designed &#38; Developed with{" "}
-            <span className="text-xl animate-pulse">🩷</span> by{" "}
-            <a
-              target="_blank"
-              href="https://github.com/ImKKingshuk"
-              className="text-[18px] rgbtext"
-            >
-              @ImKKingshuk
-            </a>
+            <span className="text-xl animate-pulse">🩷</span> by The Code Bird
           </p>
 
           <p className="text-gray-500 dark:text-white">

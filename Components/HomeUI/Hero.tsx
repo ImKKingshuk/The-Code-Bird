@@ -1,11 +1,11 @@
-import React from "react";
-import CodeBirdLogo from "../CodeBirdLogo";
+"use client";
+import HeroItem1 from "./HeroItems/HeroItem1";
 interface HeroProps {}
 
 function Hero({}: HeroProps) {
   return (
     <div>
-      <CodeBirdLogo IconSize="w-10 h-10" />
+      <HeroItem1 />
     </div>
   );
 }

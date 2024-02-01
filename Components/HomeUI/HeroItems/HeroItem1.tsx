@@ -79,8 +79,8 @@ function HeroItem1({}: HeroItem1Props) {
               </h1>
             </div>
           </div>
-          <div className="mx-auto p-6">
-            <CodeBirdLogo IconHeight="100" IconWidth="100" />
+          <div className="m-auto p-6">
+            <CodeBirdLogo IconHeight="1000" IconWidth="100" />
           </div>
         </div>
       </div>

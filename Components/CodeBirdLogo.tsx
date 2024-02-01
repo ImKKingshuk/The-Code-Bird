@@ -9,14 +9,12 @@ export default function CodeBirdLogo({
   IconHeight,
   IconWidth,
 }: CodeBirdLogoProps) {
-  const size = `fill-current ${IconSize}`;
-
   return (
     <div>
       <svg
         version="1.0"
-        height={height}
-        width={width}
+        height={IconHeight}
+        width={IconWidth}
         className="fill-current"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 500.000000 500.000000"

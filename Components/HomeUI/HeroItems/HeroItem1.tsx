@@ -61,7 +61,7 @@ function HeroItem1({}: HeroItem1Props) {
               {socialMediaLinks.map((socialMedia, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={socialMedia.link}
                   className="hover:scale-125 duration-500"
                 >
                   <span className="sr-only">{socialMedia.name}</span>

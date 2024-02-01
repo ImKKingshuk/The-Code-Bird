@@ -30,7 +30,6 @@ function CodeBird3DLogo({}: CodeBird3DLogoProps) {
           maxPolarAngle={Math.PI / 1}
           minPolarAngle={Math.PI / 1}
         />
-        {/* <Stats /> */}
       </Canvas>
     </div>
   );

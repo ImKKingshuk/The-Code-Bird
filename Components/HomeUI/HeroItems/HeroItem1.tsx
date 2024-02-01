@@ -84,6 +84,7 @@ function HeroItem1({}: HeroItem1Props) {
                 <a
                   key={index}
                   href={socialMedia.link}
+                  target="_blank"
                   className="hover:scale-125 duration-500"
                 >
                   <span className="sr-only">{socialMedia.name}</span>

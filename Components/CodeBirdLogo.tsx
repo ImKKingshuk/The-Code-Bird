@@ -2,16 +2,21 @@
 
 interface CodeBirdLogoProps {
   IconSize: string;
+  IconHeight: IconWidth;
 }
 
-export default function CodeBirdLogo({ IconSize }: CodeBirdLogoProps) {
+export default function CodeBirdLogo({
+  IconHeight,
+  IconWidth,
+}: CodeBirdLogoProps) {
   const size = `fill-current ${IconSize}`;
 
   return (
     <div>
       <svg
         version="1.0"
-        className={size}
+        height={height}
+        width={width}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 500.000000 500.000000"
         preserveAspectRatio="xMidYMid meet"

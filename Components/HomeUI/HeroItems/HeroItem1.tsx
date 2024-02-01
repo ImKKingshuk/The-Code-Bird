@@ -30,7 +30,6 @@ const socialMediaLinks: SocialMedia[] = [
 function HeroItem1({}: HeroItem1Props) {
   return (
     <div>
-      {" "}
       <div className="h-screen">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="mx-auto pt-[6rem]">

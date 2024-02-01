@@ -80,7 +80,7 @@ function HeroItem1({}: HeroItem1Props) {
             </div>
           </div>
           <div className="mx-auto p-6">
-            <CodeBirdLogo IconSize=" w-20 h-20" />
+            <CodeBirdLogo IconSize=" w-30 h-30" />
           </div>
         </div>
       </div>

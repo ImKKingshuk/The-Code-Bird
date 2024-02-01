@@ -15,11 +15,16 @@ import Typewriter from "typewriter-effect";
 interface HeroItem1Props {}
 interface SocialMedia {
   name: string;
+  link: string;
   icon: JSX.Element;
 }
 
 const socialMediaLinks: SocialMedia[] = [
-  { name: "GitHub", icon: <FaGithub className="w-6 h-6" /> },
+  {
+    name: "GitHub",
+    icon: <FaGithub className="w-6 h-6" />,
+    link: "https://.com/example",
+  },
   { name: "LinkedIn", icon: <FaLinkedin className="w-6 h-6 text-sky-700" /> },
   { name: "Facebook", icon: <FaFacebook className="w-6 h-6 text-blue-500" /> },
   { name: "X", icon: <FaXTwitter className="w-6 h-6" /> },

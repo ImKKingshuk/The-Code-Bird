@@ -1,4 +1,3 @@
-"use client";
 import React, { useRef } from "react";
 import { Canvas, useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
@@ -21,11 +20,16 @@ function CodeBird3DLogo({}: CodeBird3DLogoProps) {
   return (
     <div className="w-full h-full">
       <Canvas>
-        <PerspectiveCamera makeDefault position={[0, 0, 0]} />
+        <PerspectiveCamera makeDefault position={[0, 0, 10]} />
         <Suspense fallback={null}>
           <Model {...useLoader(GLTFLoader, "/CodeBird3D.glb")} />
         </Suspense>
-        <OrbitControls />
+        <OrbitControls
+          enableZoom
+          zoomSpeed={0.5}
+          minPolarAngle={Math.PI / 4}
+          maxPolarAngle={Math.PI / 1.5}
+        />
         {/* <Stats /> */}
       </Canvas>
     </div>

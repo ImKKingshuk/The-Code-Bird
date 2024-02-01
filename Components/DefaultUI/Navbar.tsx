@@ -27,7 +27,7 @@ const Navbar = () => {
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          <CodeBirdLogo IconSize="w-12 h-12" />
+          <CodeBirdLogo IconHeight="50" IconWidth="50" />
           <span className="self-center text-2xl p-1 font-bold whitespace-nowrap">
             The Code Bird
           </span>

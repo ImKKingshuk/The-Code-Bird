@@ -81,7 +81,7 @@ function Footer({}: FooterProps) {
             <FooterLinks title="Legal" links={legalLinks} />
           </div>
         </div>
-        <hr className="my-2 border-gray-200  dark:border-gray-700" />
+        <hr className="my-4 border-gray-200  dark:border-gray-700" />
         <div className="sm:flex sm:items-center sm:justify-between text-center">
           <p className="text-center">
             Designed &#38; Developed with{" "}

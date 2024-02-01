@@ -25,7 +25,7 @@ const socialMediaLinks: SocialMedia[] = [
   },
   { name: "Twitter", icon: <FaTwitter className="w-6 h-6 text-sky-500" /> },
   { name: "GitHub", icon: <FaGithub className="w-6 h-6" /> },
-  { name: "LinkedIn", icon: <FaLinkedin className="w-8 h-8 text-sky-700" /> },
+  { name: "LinkedIn", icon: <FaLinkedin className="w-6 h-6 text-sky-700" /> },
 ];
 function HeroItem1({}: HeroItem1Props) {
   return (
@@ -51,7 +51,7 @@ function HeroItem1({}: HeroItem1Props) {
             </div>
 
             <Link href="/JoinCommunity">
-              <p className="mx-auto px-2 text-lg rounded-full  outline outline-gray-200 w-fit">
+              <p className="mx-auto px-2 text-lg  w-fit">
                 &#60; Join Our Community &#47; &#62;
               </p>
             </Link>

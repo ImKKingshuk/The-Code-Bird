@@ -62,7 +62,9 @@ function Footer({}: FooterProps) {
             <Link href="/">
               <div className="justify-center md:justify-start flex space-x-3">
                 <CodeBirdLogo IconSize="w-12 h-12" />
-                <p className="text-2xl p-1 font-bold">The Code Bird</p>
+                <p className="self-center text-2xl p-1 font-bold">
+                  The Code Bird
+                </p>
               </div>
             </Link>
 

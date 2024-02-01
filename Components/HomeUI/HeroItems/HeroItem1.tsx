@@ -69,8 +69,8 @@ function HeroItem1({}: HeroItem1Props) {
             </div>
 
             <div className="p-4 pt-2">
-              <h1 className="text-justify mx-auto text-md">
-                &#60; "The Code Bird" is the biggest coding club of UIT, where
+              <h1 className="text-justify text-md">
+                &#60; The Code Bird is the biggest coding club of UIT, where
                 budding tech enthusiasts flock together to spread their wings
                 and explore the fascinating world of programming. With engaging
                 workshops, collaborative projects, and a supportive community,

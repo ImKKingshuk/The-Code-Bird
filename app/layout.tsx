@@ -7,7 +7,7 @@ import Footer from "@/Components/DefaultUI/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "The CodeBird",
+  title: "The Code Bird, UIT",
   description: "Official Website of The Code Bird, Coding Club of UIT Burdwan",
   metadataBase: new URL("https://nextjs.org"),
   alternates: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     },
   },
 
-  applicationName: "CodeBird UIT",
+  applicationName: "The Code Bird, UIT",
   referrer: "origin-when-cross-origin",
   keywords: [
     "The Code Bird",
@@ -36,11 +36,11 @@ export const metadata: Metadata = {
   authors: [{ name: "@ImKKingshuk", url: "https://github.com/ImKKingshuk" }],
 
   openGraph: {
-    title: "CodeBird UIT",
+    title: "The Code Bird, UIT",
     description:
       "Official Website of The Code Bird, Coding Club of UIT Burdwan",
     url: "https://",
-    siteName: "CodeBird UIT",
+    siteName: "The Code Bird, UIT",
     images: [
       {
         url: "https://nextjs.org/og.png",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "CodeBird UIT",
+    title: "The Code Bird, UIT",
     description:
       "Official Website of The Code Bird, Coding Club of UIT Burdwan",
     creator: "@ImKKingshuk",

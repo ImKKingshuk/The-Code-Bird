@@ -51,7 +51,7 @@ function HeroItem1({}: HeroItem1Props) {
             </div>
 
             <Link href="/JoinCommunity">
-              <p className="mx-auto px-2 text-lg rounded-tl-3xl rounded-br-3xl  outline outline-gray-200 w-fit">
+              <p className="mx-auto px-2 text-lg rounded-full  outline outline-gray-200 w-fit">
                 &#60; Join Our Community &#47; &#62;
               </p>
             </Link>

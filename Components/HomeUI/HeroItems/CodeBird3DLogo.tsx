@@ -24,7 +24,12 @@ function CodeBird3DLogo({}: CodeBird3DLogoProps) {
         <Suspense fallback={null}>
           <Model {...useLoader(GLTFLoader, "/CodeBird3D.glb")} />
         </Suspense>
-        <OrbitControls autoRotate autoRotateSpeed={2} />
+        <OrbitControls
+          autoRotate
+          autoRotateSpeed={2}
+          maxPolarAngle={Math.PI / 1}
+          minPolarAngle={Math.PI / 1}
+        />
         {/* <Stats /> */}
       </Canvas>
     </div>

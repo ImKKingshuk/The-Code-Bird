@@ -1,8 +1,8 @@
 "use client";
 
 interface CodeBirdLogoProps {
-  IconSize: string;
-  IconHeight: IconWidth;
+  IconHeight: string;
+  IconWidth: string;
 }
 
 export default function CodeBirdLogo({
@@ -17,6 +17,7 @@ export default function CodeBirdLogo({
         version="1.0"
         height={height}
         width={width}
+        className="fill-current"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 500.000000 500.000000"
         preserveAspectRatio="xMidYMid meet"

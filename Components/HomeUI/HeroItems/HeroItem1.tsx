@@ -2,6 +2,15 @@
 import CodeBirdLogo from "@/Components/CodeBirdLogo";
 import React from "react";
 import Link from "next/link";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
+import Typewriter from "typewriter-effect";
+
 interface HeroItem1Props {}
 interface SocialMedia {
   name: string;

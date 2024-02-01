@@ -43,6 +43,7 @@ const socialMediaLinks: SocialMedia[] = [
   {
     name: "Instagram",
     icon: <FaInstagram className="w-6 h-6 text-pink-500" />,
+    link: "https://.com/example",
   },
   { name: "Threads", icon: <FaThreads className="w-6 h-6" /> },
 ];

@@ -11,6 +11,7 @@ import {
   FaThreads,
 } from "react-icons/fa6";
 import Typewriter from "typewriter-effect";
+import CodeBird3DLogo from "./CodeBird3DLogo";
 
 interface HeroItem1Props {}
 interface SocialMedia {
@@ -105,7 +106,9 @@ function HeroItem1({}: HeroItem1Props) {
             </div>
           </div>
           <div className="m-auto p-6">
-            <CodeBirdLogo IconHeight="300" IconWidth="300" />
+            {/* <CodeBirdLogo IconHeight="300" IconWidth="300" /> */}
+
+            <CodeBird3DLogo />
           </div>
         </div>
       </div>

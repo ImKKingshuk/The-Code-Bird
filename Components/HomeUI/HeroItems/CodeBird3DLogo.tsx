@@ -19,14 +19,14 @@ interface CodeBird3DLogoProps {}
 
 function CodeBird3DLogo({}: CodeBird3DLogoProps) {
   return (
-    <div className="code-bird-3d-logo">
+    <div className="w-full h-full">
       <Canvas>
-        <PerspectiveCamera makeDefault position={[0, 0, 5]} />
+        <PerspectiveCamera makeDefault position={[0, 0, 0]} />
         <Suspense fallback={null}>
           <Model {...useLoader(GLTFLoader, "/CodeBird3D.glb")} />
         </Suspense>
         <OrbitControls />
-        <Stats />
+        {/* <Stats /> */}
       </Canvas>
     </div>
   );

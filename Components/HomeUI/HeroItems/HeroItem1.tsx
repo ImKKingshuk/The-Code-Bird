@@ -5,10 +5,10 @@ import Link from "next/link";
 import {
   FaFacebook,
   FaInstagram,
-  FaTwitter,
+  FaXTwitter,
   FaGithub,
   FaLinkedin,
-} from "react-icons/fa";
+} from "react-icons/fa6";
 import Typewriter from "typewriter-effect";
 
 interface HeroItem1Props {}
@@ -18,14 +18,14 @@ interface SocialMedia {
 }
 
 const socialMediaLinks: SocialMedia[] = [
+  { name: "GitHub", icon: <FaGithub className="w-6 h-6" /> },
+  { name: "LinkedIn", icon: <FaLinkedin className="w-6 h-6 text-sky-700" /> },
   { name: "Facebook", icon: <FaFacebook className="w-6 h-6 text-blue-500" /> },
   {
     name: "Instagram",
     icon: <FaInstagram className="w-6 h-6 text-pink-500" />,
   },
-  { name: "Twitter", icon: <FaTwitter className="w-6 h-6 text-sky-500" /> },
-  { name: "GitHub", icon: <FaGithub className="w-6 h-6" /> },
-  { name: "LinkedIn", icon: <FaLinkedin className="w-6 h-6 text-sky-700" /> },
+  { name: "Twitter", icon: <FaXTwitter className="w-6 h-6" /> },
 ];
 function HeroItem1({}: HeroItem1Props) {
   return (

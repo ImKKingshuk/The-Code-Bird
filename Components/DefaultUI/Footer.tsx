@@ -19,6 +19,13 @@ function Footer({}: FooterProps) {
     { text: "About Us", href: "/About" },
     { text: "Join Community", href: "/JoinCommunity" },
   ];
+  // const domainLinks: LinkItem[] = [
+  //   { text: "Home", href: "/" },
+  //   { text: "Blog", href: "/Blog" },
+  //   { text: "Events", href: "/Events" },
+  //   { text: "About Us", href: "/About" },
+  //   { text: "Join Community", href: "/JoinCommunity" },
+  // ];
 
   const moreLinks: LinkItem[] = [
     { text: "Advisor", href: "/About/#Advisor" },
@@ -79,6 +86,7 @@ function Footer({}: FooterProps) {
           </div>
           <div className="grid grid-cols-2 gap-8 md:gap-6 md:grid-cols-3 col-span-2">
             <FooterLinks title="Links" links={links} />
+            {/* <FooterLinks title="Domains" links={domainLinks} /> */}
             <FooterLinks title="More" links={moreLinks} />
             <FooterLinks title="Legal" links={legalLinks} />
           </div>

@@ -45,7 +45,11 @@ const socialMediaLinks: SocialMedia[] = [
     icon: <FaInstagram className="w-6 h-6 text-pink-500" />,
     link: "https://.com/example",
   },
-  { name: "Threads", icon: <FaThreads className="w-6 h-6" /> },
+  {
+    name: "Threads",
+    icon: <FaThreads className="w-6 h-6" />,
+    link: "https://.com/example",
+  },
 ];
 function HeroItem1({}: HeroItem1Props) {
   return (

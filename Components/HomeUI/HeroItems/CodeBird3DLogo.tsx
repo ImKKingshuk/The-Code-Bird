@@ -18,17 +18,17 @@ interface CodeBird3DLogoProps {}
 
 function CodeBird3DLogo({}: CodeBird3DLogoProps) {
   return (
-    <div className="w-full h-full">
+    <div className="w-screen h-screen">
       <Canvas>
-        <PerspectiveCamera makeDefault position={[0, 0, 5]} />
+        <PerspectiveCamera makeDefault position={[0, 200, 300]} />
         <Suspense fallback={null}>
           <Model {...useLoader(GLTFLoader, "/CodeBird3D.glb")} />
         </Suspense>
         <OrbitControls
           enableZoom
           zoomSpeed={0.5}
-          minPolarAngle={Math.PI / 10}
-          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 4}
+          maxPolarAngle={Math.PI / 1.5}
         />
         {/* <Stats /> */}
       </Canvas>

@@ -22,7 +22,7 @@ function CodeBird3DLogo({}: CodeBird3DLogoProps) {
       <Canvas>
         <PerspectiveCamera makeDefault position={[0, 0, 5]} />
         <Suspense fallback={null}>
-          <Model {...useLoader(GLTFLoader, "/path/to/your/logo.glb")} />
+          <Model {...useLoader(GLTFLoader, "/CodeBird3D.glb")} />
         </Suspense>
         <OrbitControls />
         <Stats />

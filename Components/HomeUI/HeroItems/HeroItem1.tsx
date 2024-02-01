@@ -8,6 +8,7 @@ import {
   FaXTwitter,
   FaGithub,
   FaLinkedin,
+  FaThreads,
 } from "react-icons/fa6";
 import Typewriter from "typewriter-effect";
 
@@ -21,11 +22,12 @@ const socialMediaLinks: SocialMedia[] = [
   { name: "GitHub", icon: <FaGithub className="w-6 h-6" /> },
   { name: "LinkedIn", icon: <FaLinkedin className="w-6 h-6 text-sky-700" /> },
   { name: "Facebook", icon: <FaFacebook className="w-6 h-6 text-blue-500" /> },
+  { name: "X", icon: <FaXTwitter className="w-6 h-6" /> },
   {
     name: "Instagram",
     icon: <FaInstagram className="w-6 h-6 text-pink-500" />,
   },
-  { name: "Twitter", icon: <FaXTwitter className="w-6 h-6" /> },
+  { name: "Threads", icon: <FaThreads className="w-6 h-6" /> },
 ];
 function HeroItem1({}: HeroItem1Props) {
   return (

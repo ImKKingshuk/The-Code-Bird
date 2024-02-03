@@ -23,7 +23,7 @@ function CodeBird3DLogo({}: CodeBird3DLogoProps) {
       <Canvas>
         <PerspectiveCamera makeDefault position={[0, 0, 300]} />
         <Suspense fallback={null}>
-          <Model {...useLoader(GLTFLoader, "/CodeBird3D.glb")} />
+          <Model {...useLoader(GLTFLoader, "/codebirdblack.glb")} />
         </Suspense>
         <OrbitControls
           autoRotate
